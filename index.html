@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6C9BCF" />
+  <title>Little Bloom Preschool | Admissions Open 2026</title>
+  <meta name="description" content="Little Bloom Preschool - a warm, caring and premium preschool in your neighbourhood. Admissions open for 2026. Schedule a school visit today." />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6C9BCF;
+      --accent: #FF8FA3;
+      --background: #F9FAFB;
+      --text: #333333;
+      --card-bg: #FFFFFF;
+      --muted-text: #6B7280;
+      --border-subtle: #E5E7EB;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --radius-pill: 999px;
+      --transition-fast: 180ms ease-out;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      border: none;
+      cursor: pointer;
+      background: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.4rem;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background: rgba(249, 250, 251, 0.92);
+      border-bottom: 1px solid rgba(209, 213, 219, 0.6);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1.4rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 10% 0%, #FFCFD5, #FF8FA3 60%, #6C9BCF);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 30px rgba(248, 113, 133, 0.35);
+    }
+
+    .brand-mark span {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .brand-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.7rem;
+      color: var(--muted-text);
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 1.6rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-pill);
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 0.65rem 1.3rem;
+      gap: 0.4rem;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), #4C78B8);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(37, 99, 235, 0.32);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(107, 114, 128, 0.45);
+      color: var(--text);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background-color: #F3F4FF;
+      color: #1f2933;
+    }
+
+    .btn-ghost {
+      background-color: transparent;
+      padding-inline: 0.75rem;
+      font-size: 0.84rem;
+      color: var(--muted-text);
+    }
+
+    .btn-ghost span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      border: 1px solid rgba(209, 213, 219, 0.8);
+      margin-left: 0.2rem;
+    }
+
+    .menu-toggle {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid rgba(209, 213, 219, 0.9);
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+
+    .menu-toggle span {
+      width: 16px;
+      height: 2px;
+      background-color: #374151;
+      border-radius: 999px;
+      position: relative;
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 2px;
+      background-color: #374151;
+      border-radius: 999px;
+      transition: transform 160ms ease-out, opacity 160ms ease-out, top 160ms ease-out, bottom 160ms ease-out;
+    }
+
+    .menu-toggle span::before {
+      top: -5px;
+    }
+
+    .menu-toggle span::after {
+      bottom: -5px;
+    }
+
+    .menu-toggle.active span {
+      background-color: transparent;
+    }
+
+    .menu-toggle.active span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu-toggle.active span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0.4rem;
+      padding: 0 1.4rem 0.9rem;
+      border-top: 1px solid rgba(229, 231, 235, 0.9);
+      background-color: rgba(249, 250, 251, 0.98);
+    }
+
+    .mobile-menu a {
+      padding: 0.55rem 0;
+      font-size: 0.92rem;
+      color: #374151;
+    }
+
+    .mobile-menu .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 3.4rem 0 2.6rem;
+      background:
+        radial-gradient(circle at top left, rgba(255, 211, 224, 0.75), transparent 55%),
+        radial-gradient(circle at 120% 10%, rgba(148, 197, 253, 0.7), transparent 55%),
+        linear-gradient(to bottom, #F9FAFB, #EFF6FF);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 540px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.2rem 0.7rem 0.2rem 0.2rem;
+      border-radius: var(--radius-pill);
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 12px 30px rgba(148, 163, 184, 0.35);
+      margin-bottom: 0.8rem;
+    }
+
+    .eyebrow-tag {
+      padding: 0.28rem 0.7rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--accent), #FFB4C1);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-text {
+      font-size: 0.76rem;
+      color: #4B5563;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: #1F2937;
+      margin-bottom: 0.8rem;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: 0.92rem;
+      color: var(--muted-text);
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: #4B5563;
+      align-items: center;
+    }
+
+    .hero-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta-badge {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ECFDF3;
+      color: #16A34A;
+      font-size: 0.7rem;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      border-radius: 26px;
+      overflow: hidden;
+      background-color: #020617;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+
+    .hero-photo {
+      position: relative;
+      overflow: hidden;
+      height: 260px;
+      background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.7)),
+        url("https://images.pexels.com/photos/8422206/pexels-photo-8422206.jpeg?auto=compress&cs=tinysrgb&w=900");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(248, 250, 252, 0.08), transparent 58%);
+    }
+
+    .hero-photo-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 1.1rem 1.1rem 1.2rem;
+      color: #E5E7EB;
+    }
+
+    .hero-photo-caption h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero-photo-caption p {
+      font-size: 0.78rem;
+      color: #CBD5F5;
+    }
+
+    .hero-photo-badge {
+      padding: 0.32rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.82);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.74rem;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+    }
+
+    .hero-photo-badge span {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #4ADE80;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3);
+    }
+
+    .hero-floating {
+      position: absolute;
+      right: 6%;
+      bottom: -14%;
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 0.8rem 0.9rem;
+      box-shadow: 0 14px 38px rgba(15, 23, 42, 0.22);
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      max-width: 210px;
+    }
+
+    .hero-floating-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .hero-floating-sub {
+      font-size: 0.72rem;
+      color: var(--muted-text);
+    }
+
+    .hero-floating-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.4rem;
+    }
+
+    .hero-floating-pills {
+      display: flex;
+      gap: 0.35rem;
+    }
+
+    .hero-pill {
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background-color: #EFF6FF;
+      font-size: 0.68rem;
+      color: #1D4ED8;
+    }
+
+    .hero-rating {
+      font-size: 0.7rem;
+      color: #F97316;
+      text-align: right;
+    }
+
+    .hero-rating span {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    section {
+      padding: 2.8rem 0 2.4rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted-text);
+      margin-bottom: 0.2rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      max-width: 560px;
+      margin: 0.2rem auto 0;
+    }
+
+    /* WHY CHOOSE US */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .feature-card {
+      background-color: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 1rem 1rem 1rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .feature-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 0% 0%, #EFF6FF, #DBEAFE 55%, #E0F2FE);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #1D4ED8;
+      flex-shrink: 0;
+    }
+
+    .feature-content h3 {
+      font-size: 0.98rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .feature-content p {
+      font-size: 0.84rem;
+      color: var(--muted-text);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 45px rgba(15, 23, 42, 0.12);
+      border-color: rgba(129, 140, 248, 0.55);
+      background-color: #F9FAFF;
+    }
+
+    /* PROGRAMS */
+    .programs-intro {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted-text);
+    }
+
+    .program-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+      margin-bottom: 1.3rem;
+      align-items: center;
+    }
+
+    .program-copy {
+      background-color: var(--card-bg);
+      padding: 1.1rem 1.2rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05);
+    }
+
+    .program-tag {
+      display: inline-flex;
+      padding: 0.18rem 0.6rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.7rem;
+      background-color: #EFF6FF;
+      color: #1D4ED8;
+      margin-bottom: 0.45rem;
+      font-weight: 500;
+    }
+
+    .program-title {
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .program-age {
+      font-size: 0.82rem;
+      color: var(--muted-text);
+      margin-bottom: 0.6rem;
+    }
+
+    .program-desc {
+      font-size: 0.86rem;
+      color: var(--muted-text);
+      margin-bottom: 0.9rem;
+    }
+
+    .program-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .program-note {
+      font-size: 0.78rem;
+      color: #6B7280;
+    }
+
+    .program-media {
+      border-radius: var(--radius-lg);
+      position: relative;
+      overflow: hidden;
+      min-height: 150px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    .program-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.7), transparent 50%);
+    }
+
+    .program-media-caption {
+      position: absolute;
+      left: 1rem;
+      bottom: 0.9rem;
+      z-index: 1;
+      color: #E5E7EB;
+      font-size: 0.78rem;
+    }
+
+    .program-media-caption strong {
+      display: block;
+      font-size: 0.88rem;
+      color: #F9FAFB;
+    }
+
+    .program-media.playgroup {
+      background-image: url("https://images.pexels.com/photos/168866/pexels-photo-168866.jpeg?auto=compress&cs=tinysrgb&w=900");
+    }
+
+    .program-media.nursery {
+      background-image: url("https://images.pexels.com/photos/8422237/pexels-photo-8422237.jpeg?auto=compress&cs=tinysrgb&w=900");
+    }
+
+    .program-media.lkgukg {
+      background-image: url("https://images.pexels.com/photos/8617981/pexels-photo-8617981.jpeg?auto=compress&cs=tinysrgb&w=900");
+    }
+
+    .program-media.daycare {
+      background-image: url("https://images.pexels.com/photos/3933275/pexels-photo-3933275.jpeg?auto=compress&cs=tinysrgb&w=900");
+    }
+
+    /* DAYCARE HIGHLIGHT */
+    .daycare {
+      background: radial-gradient(circle at 0 0, rgba(255, 241, 242, 0.9), transparent 55%),
+        radial-gradient(circle at 100% 0, rgba(239, 246, 255, 0.9), transparent 55%),
+        #FFF7FB;
+    }
+
+    .daycare-inner {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 26px;
+      border: 1px solid rgba(253, 164, 175, 0.5);
+      box-shadow: 0 20px 50px rgba(248, 113, 133, 0.24);
+      padding: 1.6rem 1.4rem 1.6rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .daycare-header-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #FB7185;
+      margin-bottom: 0.2rem;
+    }
+
+    .daycare-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .daycare-text {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 0.9rem;
+    }
+
+    .daycare-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+      font-size: 0.82rem;
+    }
+
+    .daycare-point {
+      display: flex;
+      gap: 0.4rem;
+      align-items: flex-start;
+      color: #4B5563;
+    }
+
+    .daycare-point-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background-color: #FEE2E2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: #F97373;
+      flex-shrink: 0;
+    }
+
+    .daycare-note {
+      font-size: 0.75rem;
+      color: #9CA3AF;
+      margin-top: 0.4rem;
+    }
+
+    .daycare-visual {
+      position: relative;
+    }
+
+    .daycare-card {
+      border-radius: 24px;
+      overflow: hidden;
+      background-image:
+        linear-gradient(135deg, rgba(255, 222, 226, 0.96), rgba(249, 168, 212, 0.96)),
+        url("https://images.pexels.com/photos/3933276/pexels-photo-3933276.jpeg?auto=compress&cs=tinysrgb&w=900");
+      background-size: cover;
+      background-position: center;
+      padding: 0.7rem;
+      position: relative;
+    }
+
+    .daycare-card-inner {
+      background-color: #FFF7FB;
+      border-radius: 18px;
+      padding: 0.9rem 1rem;
+      box-shadow: inset 0 0 0 1px rgba(248, 113, 133, 0.18);
+    }
+
+    .daycare-card-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+    }
+
+    .daycare-card-heading h3 {
+      font-size: 0.9rem;
+    }
+
+    .daycare-card-badge {
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background-color: #FEE2E2;
+      font-size: 0.68rem;
+      color: #DC2626;
+      font-weight: 500;
+    }
+
+    .daycare-card-list {
+      list-style: none;
+      font-size: 0.8rem;
+      color: #6B7280;
+      display: grid;
+      gap: 0.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .daycare-card-list li::before {
+      content: "• ";
+      color: #F97373;
+    }
+
+    .daycare-slot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.76rem;
+      color: #111827;
+      margin-top: 0.3rem;
+    }
+
+    .daycare-capacity {
+      font-size: 0.74rem;
+      color: #9CA3AF;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      cursor: pointer;
+      background-color: #E5E7EB;
+      min-height: 92px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 220ms ease-out;
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.35), transparent 60%);
+      opacity: 0;
+      transition: opacity 200ms ease-out;
+    }
+
+    .gallery-item-caption {
+      position: absolute;
+      left: 0.6rem;
+      bottom: 0.5rem;
+      z-index: 1;
+      font-size: 0.72rem;
+      color: #F9FAFB;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 200ms ease-out, transform 200ms ease-out;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    .gallery-item:hover .gallery-item-caption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item.large {
+      grid-column: span 2;
+      min-height: 160px;
+    }
+
+    /* LIGHTBOX */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease-out;
+      z-index: 50;
+      padding: 1.4rem;
+    }
+
+    .lightbox-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-dialog {
+      max-width: 760px;
+      width: 100%;
+      max-height: 90vh;
+      background-color: #020617;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.6);
+      position: relative;
+    }
+
+    .lightbox-image-wrapper {
+      position: relative;
+      background-color: #020617;
+    }
+
+    .lightbox-image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      padding: 0.6rem 1rem 0.9rem;
+      font-size: 0.82rem;
+      color: #E5E7EB;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.9));
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.7rem;
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.9);
+      background-color: rgba(15, 23, 42, 0.88);
+      color: #E5E7EB;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+    }
+
+    .testimonial-card {
+      background-color: var(--card-bg);
+      padding: 1.1rem 1.1rem 1rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .testimonial-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .testimonial-header-main {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .testimonial-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background-color: #E5E7EB;
+    }
+
+    .testimonial-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .testimonial-name {
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .testimonial-meta {
+      font-size: 0.78rem;
+      color: var(--muted-text);
+    }
+
+    .testimonial-badge {
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background-color: #EFF6FF;
+      font-size: 0.7rem;
+      color: #1D4ED8;
+      font-weight: 500;
+    }
+
+    .testimonial-body {
+      font-size: 0.86rem;
+      color: #4B5563;
+    }
+
+    .testimonial-stars {
+      font-size: 0.85rem;
+      color: #FBBF24;
+    }
+
+    /* INQUIRY FORM */
+    .inquiry-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+      align-items: flex-start;
+    }
+
+    .inquiry-highlight {
+      background-color: #EFF6FF;
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1.1rem;
+      border: 1px solid rgba(191, 219, 254, 0.9);
+      font-size: 0.88rem;
+      color: #1F2937;
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.08);
+    }
+
+    .inquiry-highlight h3 {
+      font-size: 0.98rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .inquiry-highlight p {
+      margin-bottom: 0.6rem;
+      color: #4B5563;
+    }
+
+    .inquiry-bullets {
+      list-style: none;
+      font-size: 0.82rem;
+      color: #4B5563;
+      display: grid;
+      gap: 0.25rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .inquiry-bullets li::before {
+      content: "✓ ";
+      color: #16A34A;
+    }
+
+    .privacy-text {
+      font-size: 0.74rem;
+      color: #6B7280;
+      margin-top: 0.6rem;
+    }
+
+    .inquiry-form {
+      background-color: var(--card-bg);
+      padding: 1.1rem 1.1rem 1.3rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 14px 45px rgba(15, 23, 42, 0.06);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .form-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    .form-label span {
+      color: #EF4444;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      padding: 0.6rem 0.75rem;
+      font-size: 0.86rem;
+      font-family: inherit;
+      outline: none;
+      background-color: #F9FAFB;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.65);
+      background-color: #FFFFFF;
+    }
+
+    .form-helper {
+      font-size: 0.74rem;
+      color: #9CA3AF;
+      margin-top: 0.2rem;
+    }
+
+    /* CONTACT & LOCATION */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.3rem;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      background-color: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.2rem 1rem;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
+    }
+
+    .contact-group {
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted-text);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-text {
+      font-size: 0.9rem;
+      color: #1F2937;
+    }
+
+    .contact-detail {
+      font-size: 0.88rem;
+      color: #374151;
+    }
+
+    .contact-detail a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .map-placeholder {
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(156, 163, 175, 0.9);
+      padding: 1.3rem 1rem;
+      background: radial-gradient(circle at 0 0, rgba(219, 234, 254, 0.6), transparent 55%), #F9FAFB;
+      text-align: left;
+    }
+
+    .map-placeholder-title {
+      font-size: 0.96rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .map-placeholder-text {
+      font-size: 0.82rem;
+      color: var(--muted-text);
+      margin-bottom: 0.3rem;
+    }
+
+    .map-placeholder-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background-color: #111827;
+      color: #E5E7EB;
+      font-size: 0.78rem;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(229, 231, 235, 0.9);
+      padding: 1.6rem 0 1.4rem;
+      background-color: #F3F4F6;
+      margin-top: 1.4rem;
+    }
+
+    .footer-main {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 0.82rem;
+      color: var(--muted-text);
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a {
+      color: #4B5563;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      background-color: #E5E7EB;
+      color: #111827;
+    }
+
+    .footer-bottom {
+      margin-top: 0.4rem;
+      font-size: 0.75rem;
+      color: #9CA3AF;
+    }
+
+    .footer-bottom span {
+      display: block;
+      margin-top: 0.15rem;
+    }
+
+    /* UTILITY CTA BANDS */
+    .inline-cta-row {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+    }
+
+    .inline-cta-note {
+      font-size: 0.78rem;
+      color: #6B7280;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    /* MEDIA QUERIES */
+    @media (max-width: 360px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.02rem;
+      }
+
+      .btn {
+        padding-inline: 1.05rem;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .hero {
+        padding: 3.6rem 0 3.1rem;
+      }
+
+      .hero-title {
+        font-size: 2.3rem;
+      }
+
+      .hero-photo {
+        height: 290px;
+      }
+
+      .hero-floating {
+        right: 5%;
+        bottom: -16%;
+      }
+
+      .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .program-row {
+        grid-template-columns: 1.1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.8rem;
+      }
+
+      .gallery-item.large {
+        grid-column: span 2;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-grid {
+        grid-template-columns: 1.1fr 1.2fr;
+      }
+
+      .footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .navbar-inner {
+        padding-block: 0.75rem;
+      }
+
+      .nav-links {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: none !important;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr);
+        gap: 2.5rem;
+      }
+
+      .hero {
+        padding: 4.1rem 0 3.4rem;
+      }
+
+      .hero-title {
+        font-size: 2.6rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .hero-photo {
+        height: 330px;
+      }
+
+      .hero-floating {
+        right: 6%;
+        bottom: -18%;
+      }
+
+      section {
+        padding: 3.1rem 0 2.8rem;
+      }
+
+      .daycare-inner {
+        padding-inline: 1.8rem;
+        grid-template-columns: 1.1fr 1fr;
+      }
+
+      .daycare-points {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .inquiry-layout {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-title {
+        font-size: 2.9rem;
+      }
+
+      .hero-photo {
+        height: 360px;
+      }
+
+      .hero-floating {
+        right: 10%;
+        bottom: -18%;
+      }
+
+      .features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .gallery-item.large {
+        grid-column: span 2;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- NAVBAR -->
+    <header class="navbar" id="home">
+      <div class="navbar-inner">
+        <a href="#home" class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span>LB</span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">Little Bloom Preschool</div>
+            <div class="brand-subtitle">A warm start to big futures</div>
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#programs">Programs</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="tel:+919876543210">
+            Call us
+            <span>+</span>
+          </a>
+          <a class="btn btn-primary" href="#inquiry">Book a visit</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#inquiry" class="btn btn-primary">Book a School Visit</a>
+        <a href="https://wa.me/918641094711" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Chat on WhatsApp</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="eyebrow">
+                <span class="eyebrow-tag">Admissions 2026</span>
+                <span class="eyebrow-text">Limited seats • Playgroup to UKG &amp; Daycare</span>
+              </div>
+              <h1 class="hero-title">Admissions Open for 2026</h1>
+              <p class="hero-subtitle">A Safe &amp; Caring Preschool Near You</p>
+              <p class="hero-description">
+                Building strong foundations for your child’s future in a nurturing, joyful and secure environment in the heart of the city.
+              </p>
+
+              <div class="hero-cta-row">
+                <a class="btn btn-primary" href="#inquiry">Book a School Visit</a>
+                <a class="btn btn-outline" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+              </div>
+
+              <div class="hero-meta">
+                <span class="hero-meta-item">
+                  <span class="hero-meta-badge">★</span>
+                  4.9/5 rated by parents
+                </span>
+                <span class="hero-meta-item">
+                  <span class="hero-meta-badge">✓</span>
+                  Safe, CCTV-enabled campus
+                </span>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+              <div class="hero-card">
+                <div class="hero-photo">
+                  <div class="hero-photo-overlay">
+                    <div class="hero-photo-caption">
+                      <h3>Bright, happy classrooms</h3>
+                      <p>Sunlit spaces designed for curious little minds.</p>
+                    </div>
+                    <div class="hero-photo-badge">
+                      <span></span>
+                      Now accepting visits for 2026 batch
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-floating">
+                <div class="hero-floating-title">Caring educators, safe routines</div>
+                <div class="hero-floating-sub">
+                  Personal attention with small group sizes and age-appropriate activities.
+                </div>
+                <div class="hero-floating-meta">
+                  <div class="hero-floating-pills">
+                    <span class="hero-pill">Play-based learning</span>
+                    <span class="hero-pill">Parent updates</span>
+                  </div>
+                  <div class="hero-rating">
+                    <span>120+</span><br />happy families
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section id="why-us">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Why parents choose us</div>
+            <h2 class="section-title">A preschool that feels like home</h2>
+            <p class="section-subtitle">
+              We combine warm, personal care with a structured early years program so your child feels safe, happy and ready for school.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <div class="feature-content">
+                <h3>Safe &amp; Secure Campus</h3>
+                <p>Controlled entry, child-safe interiors and regular safety checks to keep little ones protected.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">👩‍🏫</div>
+              <div class="feature-content">
+                <h3>Trained &amp; Caring Teachers</h3>
+                <p>Early years educators who are gentle, attentive and trained to support every child’s pace.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🎨</div>
+              <div class="feature-content">
+                <h3>Activity-Based Learning</h3>
+                <p>Hands-on activities, stories and music that build language, motor and social skills.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">👧</div>
+              <div class="feature-content">
+                <h3>Small Batch Size</h3>
+                <p>Limited class strength so every child receives individual attention and gentle guidance.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📹</div>
+              <div class="feature-content">
+                <h3>CCTV Monitoring</h3>
+                <p>Common areas monitored with CCTV to keep our campus transparent and secure.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">✨</div>
+              <div class="feature-content">
+                <h3>Clean &amp; Hygienic</h3>
+                <p>Daily sanitisation, clean washrooms and child-friendly materials for a healthy environment.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="inline-cta-row">
+            <a class="btn btn-primary" href="#inquiry">Schedule a school tour</a>
+            <a class="btn btn-outline" href="tel:+919876543210">Talk to our coordinator</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMS -->
+      <section id="programs">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Programs offered</div>
+            <h2 class="section-title">Age-appropriate programs for 2–6 years</h2>
+            <p class="section-subtitle">
+              From first separation to school readiness, our programs gently support each milestone in your child’s early years.
+            </p>
+          </div>
+
+          <p class="programs-intro">
+            Choose the program that best suits your child’s age and your family’s schedule. Our team will guide you on the right fit during your visit.
+          </p>
+
+          <!-- Playgroup -->
+          <div class="program-row">
+            <div class="program-copy">
+              <span class="program-tag">Playgroup</span>
+              <h3 class="program-title">First steps into a happy classroom</h3>
+              <p class="program-age">Age 2–3 years</p>
+              <p class="program-desc">
+                A gentle introduction to preschool with short, engaging sessions that help children settle comfortably outside home.
+                Through songs, free play and sensory activities, little ones learn to explore, share and make first friends.
+              </p>
+              <div class="program-meta">
+                <p class="program-note">Calm settling-in support for parents and children.</p>
+                <a href="#inquiry" class="btn btn-outline">Enquire Now</a>
+              </div>
+            </div>
+            <div class="program-media playgroup">
+              <div class="program-media-caption">
+                <strong>Playgroup</strong>
+                Gentle first school experience
+              </div>
+            </div>
+          </div>
+
+          <!-- Nursery -->
+          <div class="program-row">
+            <div class="program-media nursery">
+              <div class="program-media-caption">
+                <strong>Nursery</strong>
+                Building language &amp; curiosity
+              </div>
+            </div>
+            <div class="program-copy">
+              <span class="program-tag">Nursery</span>
+              <h3 class="program-title">Curious minds, joyful learning</h3>
+              <p class="program-age">Age 3–4 years</p>
+              <p class="program-desc">
+                A structured yet playful program where children explore early concepts in literacy, numeracy and the world around them.
+                Story-telling, art and free play help develop communication, confidence and independence.
+              </p>
+              <div class="program-meta">
+                <p class="program-note">Balanced routine with active play and quiet time.</p>
+                <a href="#inquiry" class="btn btn-outline">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LKG / UKG -->
+          <div class="program-row">
+            <div class="program-copy">
+              <span class="program-tag">LKG / UKG</span>
+              <h3 class="program-title">Confident &amp; school ready</h3>
+              <p class="program-age">Age 4–6 years</p>
+              <p class="program-desc">
+                A strong foundation in reading, writing and number concepts while keeping learning enjoyable and stress-free.
+                Children build good work habits, social skills and confidence for a smooth transition to primary school.
+              </p>
+              <div class="program-meta">
+                <p class="program-note">Aligned with leading school expectations.</p>
+                <a href="#inquiry" class="btn btn-outline">Enquire Now</a>
+              </div>
+            </div>
+            <div class="program-media lkgukg">
+              <div class="program-media-caption">
+                <strong>LKG &amp; UKG</strong>
+                Strong academic foundation
+              </div>
+            </div>
+          </div>
+
+          <!-- Daycare -->
+          <div class="program-row">
+            <div class="program-media daycare">
+              <div class="program-media-caption">
+                <strong>Daycare</strong>
+                Safe, calm care after school
+              </div>
+            </div>
+            <div class="program-copy">
+              <span class="program-tag">Daycare</span>
+              <h3 class="program-title">Reliable care for working parents</h3>
+              <p class="program-age">Flexible hours</p>
+              <p class="program-desc">
+                A warm, homely space for children to rest, eat and play after school hours. Age-wise activities, quiet corners and
+                caring adults ensure your child feels relaxed and secure till you arrive.
+              </p>
+              <div class="program-meta">
+                <p class="program-note">Snacks, nap time and homework support available.</p>
+                <a href="#inquiry" class="btn btn-outline">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="inline-cta-row">
+            <a class="btn btn-primary" href="#inquiry">Discuss the right program</a>
+            <a class="btn btn-outline" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+              Ask on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DAYCARE HIGHLIGHT -->
+      <section class="daycare">
+        <div class="container">
+          <div class="daycare-inner">
+            <div>
+              <div class="daycare-header-label">Premium daycare</div>
+              <h2 class="daycare-title">Thoughtfully planned daycare for busy parents</h2>
+              <p class="daycare-text">
+                Designed keeping urban working families in mind, our daycare offers flexible timings, safe supervision and comforting
+                routines so your child feels at home while you are at work.
+              </p>
+
+              <div class="daycare-points">
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">⏰</span>
+                  <span>Flexible timings that match your office hours.</span>
+                </div>
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">🧸</span>
+                  <span>Comfortable rest areas with clean bedding.</span>
+                </div>
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">🧃</span>
+                  <span>Nutritious snacks with a focus on hygiene.</span>
+                </div>
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">📲</span>
+                  <span>Safe pickup verification and parent updates.</span>
+                </div>
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">🎲</span>
+                  <span>Quiet play corners, books and puzzles.</span>
+                </div>
+                <div class="daycare-point">
+                  <span class="daycare-point-icon">👩‍👧</span>
+                  <span>Low adult-to-child ratio for personal care.</span>
+                </div>
+              </div>
+
+              <a class="btn btn-primary" href="#inquiry">Schedule a Visit Today</a>
+              <p class="daycare-note">Share your working hours and we will suggest a suitable daycare plan.</p>
+            </div>
+
+            <div class="daycare-visual" aria-hidden="true">
+              <div class="daycare-card">
+                <div class="daycare-card-inner">
+                  <div class="daycare-card-heading">
+                    <h3>Sample Daycare Routine</h3>
+                    <span class="daycare-card-badge">Weekdays</span>
+                  </div>
+                  <ul class="daycare-card-list">
+                    <li>Warm welcome &amp; evening snack</li>
+                    <li>Quiet reading &amp; free play</li>
+                    <li>Nap / rest corner for younger children</li>
+                    <li>Homework support for older children</li>
+                  </ul>
+                  <div class="daycare-slot">
+                    <span>Available between 12:30 pm – 7:30 pm*</span>
+                    <span>Custom slots on request</span>
+                  </div>
+                  <div class="daycare-capacity">*Actual timings and plans can be customised for your family.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Photo gallery</div>
+            <h2 class="section-title">A glimpse into Little Bloom</h2>
+            <p class="section-subtitle">
+              Bright classrooms, engaging activities and thoughtfully designed play spaces that children love coming back to every day.
+            </p>
+          </div>
+
+          <div class="gallery-grid" aria-label="Photo gallery">
+            <figure class="gallery-item large" data-caption="Spacious, sunlit classroom with age-appropriate learning corners.">
+              <img src="https://images.pexels.com/photos/8422240/pexels-photo-8422240.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bright preschool classroom with children and teacher" loading="lazy" />
+              <figcaption class="gallery-item-caption">Classroom</figcaption>
+            </figure>
+            <figure class="gallery-item" data-caption="Children engaged in guided activities and group play.">
+              <img src="https://images.pexels.com/photos/8613373/pexels-photo-8613373.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Children doing activity-based learning in a classroom" loading="lazy" />
+              <figcaption class="gallery-item-caption">Activity time</figcaption>
+            </figure>
+            <figure class="gallery-item" data-caption="Safe indoor play zone for active movement and fun.">
+              <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Indoor play area with preschool children" loading="lazy" />
+              <figcaption class="gallery-item-caption">Play area</figcaption>
+            </figure>
+            <figure class="gallery-item" data-caption="Art and craft sessions that support creativity and fine motor skills.">
+              <img src="https://images.pexels.com/photos/8612922/pexels-photo-8612922.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Child painting and doing craft work" loading="lazy" />
+              <figcaption class="gallery-item-caption">Art &amp; craft</figcaption>
+            </figure>
+            <figure class="gallery-item" data-caption="Outdoor play for fresh air, gross motor development and teamwork.">
+              <img src="https://images.pexels.com/photos/8422241/pexels-photo-8422241.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Preschool children playing outdoors" loading="lazy" />
+              <figcaption class="gallery-item-caption">Outdoor play</figcaption>
+            </figure>
+          </div>
+
+          <p class="inline-cta-note">
+            Photos are for illustration. Actual campus images can be added when the website goes live.
+          </p>
+
+          <div class="inline-cta-row">
+            <a class="btn btn-primary" href="#inquiry">See the campus in person</a>
+            <a class="btn btn-outline" href="tel:+919876543210">Call to fix a visit</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Parent stories</div>
+            <h2 class="section-title">Trusted by urban families</h2>
+            <p class="section-subtitle">
+              Parents appreciate our warm staff, safe campus and transparent communication. Here’s what a few of them shared.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="testimonial-header-main">
+                  <div class="testimonial-avatar">
+                    <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Parent Priya Sharma" loading="lazy" />
+                  </div>
+                  <div>
+                    <div class="testimonial-name">Priya Sharma</div>
+                    <div class="testimonial-meta">Mother of Aarav • Nursery</div>
+                  </div>
+                </div>
+                <span class="testimonial-badge">2nd year with us</span>
+              </header>
+              <p class="testimonial-body">
+                We wanted a preschool that felt warm but professional, and Little Bloom has been exactly that. The teachers are gentle,
+                patient and keep us updated, which really puts us at ease as working parents.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </article>
+
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="testimonial-header-main">
+                  <div class="testimonial-avatar">
+                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Parents Rahul and Neha Verma" loading="lazy" />
+                  </div>
+                  <div>
+                    <div class="testimonial-name">Rahul &amp; Neha Verma</div>
+                    <div class="testimonial-meta">Parents of Myra • LKG</div>
+                  </div>
+                </div>
+                <span class="testimonial-badge">Parent recommended</span>
+              </header>
+              <p class="testimonial-body">
+                The campus is very clean, staff is polite and the learning spaces are thoughtfully planned. Our daughter looks forward
+                to school every morning and has become much more confident and expressive.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </article>
+
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="testimonial-header-main">
+                  <div class="testimonial-avatar">
+                    <img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Parent Anita Rao" loading="lazy" />
+                  </div>
+                  <div>
+                    <div class="testimonial-name">Anita Rao</div>
+                    <div class="testimonial-meta">Mother of Vihaan • Daycare</div>
+                  </div>
+                </div>
+                <span class="testimonial-badge">Daycare &amp; preschool</span>
+              </header>
+              <p class="testimonial-body">
+                The daycare team is very caring and attentive to small details. From pickup safety to snacks and nap time, everything
+                is well organised. It gives me huge peace of mind during long work days.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- INQUIRY FORM -->
+      <section id="inquiry">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Schedule a visit</div>
+            <h2 class="section-title">Let’s help you plan your child’s first school</h2>
+            <p class="section-subtitle">
+              Share a few details and our admissions counsellor will call you back with program options, fees and visit slots.
+            </p>
+          </div>
+
+          <div class="inquiry-layout">
+            <aside class="inquiry-highlight">
+              <h3>What happens after you submit?</h3>
+              <p>
+                Our team will reach out within one working day to understand your child’s age, your location and preferred timings,
+                and help you with the next steps.
+              </p>
+              <ul class="inquiry-bullets">
+                <li>Guided school tour on a convenient date</li>
+                <li>Program and fee discussion based on your needs</li>
+                <li>Clarity on daycare options, if required</li>
+              </ul>
+              <p class="privacy-text">
+                We respect your privacy. Your information will remain confidential and will be used only to contact you about admissions.
+              </p>
+            </aside>
+
+            <form class="inquiry-form" id="inquiryForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="parentName">Parent Name <span>*</span></label>
+                  <input class="form-input" type="text" id="parentName" name="parentName" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+                  <input class="form-input" type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91 -" required />
+                  <p class="form-helper">We will use this number to confirm your visit.</p>
+                </div>
+              </div>
+
+              <div class="form-row" style="margin-top: 0.6rem;">
+                <div class="form-field">
+                  <label class="form-label" for="childAge">Child Age <span>*</span></label>
+                  <input class="form-input" type="text" id="childAge" name="childAge" placeholder="e.g. 3 years 2 months" required />
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="preferredProgram">Preferred Program</label>
+                  <select class="form-select" id="preferredProgram" name="preferredProgram">
+                    <option value="">Select a program</option>
+                    <option value="playgroup">Playgroup (Age 2–3)</option>
+                    <option value="nursery">Nursery (Age 3–4)</option>
+                    <option value="lkgukg">LKG / UKG</option>
+                    <option value="daycare">Daycare</option>
+                    <option value="not-sure">Not sure yet, need guidance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field" style="margin-top: 0.6rem;">
+                <label class="form-label" for="message">Message (Optional)</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Share anything specific you are looking for, preferred visit days, daycare requirement, etc."></textarea>
+              </div>
+
+              <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <button type="submit" class="btn btn-primary">Schedule a School Visit</button>
+                <span class="form-helper">You can also call us directly on <a href="tel:+919876543210">+91-98765 43210</a>.</span>
+                <span class="privacy-text">We respect your privacy. Your information will remain confidential.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT & LOCATION -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">Contact &amp; location</div>
+            <h2 class="section-title">Visit Little Bloom Preschool</h2>
+            <p class="section-subtitle">
+              Conveniently located in a quiet, residential neighbourhood with easy access from major city roads and public transport.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-group">
+                <div class="contact-label">Address</div>
+                <p class="contact-text">
+                  Little Bloom Preschool<br />
+                  123, Palm Grove Road, Indiranagar<br />
+                  Bengaluru, Karnataka 560038
+                </p>
+              </div>
+
+              <div class="contact-group">
+                <div class="contact-label">Phone</div>
+                <p class="contact-detail">
+                  <a href="tel:+919876543210">+91-98765 43210</a><br />
+                  <span style="font-size: 0.78rem; color: #6B7280;">Mon–Fri, 9:00 am – 6:00 pm</span>
+                </p>
+              </div>
+
+              <div class="contact-group">
+                <div class="contact-label">Email</div>
+                <p class="contact-detail">
+                  <a href="mailto:hello@littlebloom.in">hello@littlebloom.in</a>
+                </p>
+              </div>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="#inquiry">Plan a campus visit</a>
+                <a class="btn btn-outline" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="map-placeholder" aria-label="Google Map placeholder">
+              <div class="map-placeholder-title">Google Map embed placeholder</div>
+              <p class="map-placeholder-text">
+                A live Google Map showing the exact preschool location can be embedded here for easy navigation.
+              </p>
+              <div class="map-placeholder-chip">
+                <span>🗺️</span>
+                <span>Embed Google Maps iframe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="brand-title">Little Bloom Preschool</div>
+            <div>Playgroup • Nursery • LKG &amp; UKG • Daycare</div>
+          </div>
+
+          <div>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#programs">Programs</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#inquiry">Admissions</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+              <span class="social-pill">fb</span>
+              <span class="social-pill">in</span>
+              <span class="social-pill">wa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="currentYear"></span> Little Bloom Preschool. All rights reserved.</span>
+          <span>Sample admission-focused website concept.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox-backdrop" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded gallery image">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" type="button" aria-label="Close gallery image">&times;</button>
+      <div class="lightbox-image-wrapper">
+        <img src="" alt="" id="lightboxImage" />
+      </div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Mobile navigation
+    (function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const navLinks = mobileMenu ? mobileMenu.querySelectorAll('a[href^="#"]') : [];
+
+      if (!toggle || !mobileMenu) return;
+
+      toggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        toggle.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    // Lightbox
+    (function () {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeBtn = document.querySelector('.lightbox-close');
+      const galleryItems = document.querySelectorAll('.gallery-item img');
+
+      if (!lightbox || !lightboxImage || !lightboxCaption || !closeBtn || !galleryItems.length) return;
+
+      const openLightbox = (src, alt, caption) => {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt || '';
+        lightboxCaption.textContent = caption || '';
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+        lightboxImage.src = '';
+      };
+
+      galleryItems.forEach(img => {
+        img.addEventListener('click', () => {
+          const figure = img.closest('.gallery-item');
+          const caption = figure ? figure.getAttribute('data-caption') : img.alt;
+          openLightbox(img.src, img.alt, caption);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('open')) {
+          closeLightbox();
+        }
+      });
+    })();
+
+    // Simple form handling: prevent full page reload
+    (function () {
+      const form = document.getElementById('inquiryForm');
+      if (!form) return;
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const parentName = form.parentName.value.trim();
+        const phone = form.phoneNumber.value.trim();
+        const childAge = form.childAge.value.trim();
+
+        if (!parentName || !phone || !childAge) {
+          alert('Please fill in Parent Name, Phone Number and Child Age to schedule a visit.');
+          return;
+        }
+
+        alert('Thank you for your interest in Little Bloom Preschool. Our admissions counsellor will contact you shortly.');
+        form.reset();
+      });
+    })();
+
+    // Footer year
+    (function () {
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>
+
